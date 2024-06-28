@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthFirst - Personal Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HealthFirst</h1>
+        <p>Track Your Daily Health Metrics</p>
+    </header>
+    <main>
+        <section id="tracker">
+            <h2>Daily Health Metrics</h2>
+            <form id="health-form">
+                <label for="water">Water Intake (cups):</label>
+                <input type="number" id="water" name="water" min="0" required>
+
+                <label for="exercise">Exercise Duration (minutes):</label>
+                <input type="number" id="exercise" name="exercise" min="0" required>
+
+                <label for="sleep">Sleep Hours:</label>
+                <input type="number" id="sleep" name="sleep" min="0" required>
+
+                <label for="meals">Meals:</label>
+                <textarea id="meals" name="meals" rows="4" required></textarea>
+
+                <button type="submit">Log Metrics</button>
+            </form>
+        </section>
+        <section id="summary">
+            <h2>Today's Summary</h2>
+            <div id="summary-content">
+                <p><strong>Water Intake:</strong> <span id="water-summary">0</span> cups</p>
+                <p><strong>Exercise Duration:</strong> <span id="exercise-summary">0</span> minutes</p>
+                <p><strong>Sleep Hours:</strong> <span id="sleep-summary">0</span> hours</p>
+                <p><strong>Meals:</strong> <span id="meals-summary">None</span></p>
+            </div>
+        </section>
+        <section id="tips">
+            <h2>Daily Health Tips</h2>
+            <div id="tips-content">
+                <p>💧 Stay hydrated by drinking at least 8 cups of water daily.</p>
+                <p>🏃‍♂️ Aim for at least 30 minutes of physical activity every day.</p>
+                <p>😴 Ensure you get 7-9 hours of sleep each night.</p>
+                <p>🥗 Eat a balanced diet with plenty of fruits and vegetables.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthFirst. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
